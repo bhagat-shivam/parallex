@@ -45,7 +45,7 @@ p.span{
     min-height: 400px;
 }
 
-
+/* section style */
 
 .section {
     text-align: center;
@@ -63,7 +63,7 @@ p.span{
 }
 
 
-
+/* image text and content styling */
 
 .ptext {
     position: absolute;
@@ -76,7 +76,7 @@ p.span{
     text-transform: uppercase;
 }
 
-.petxt .border img{
+.ptext .border img{
     position: relative;
     top: -195px;
     left: -20px;
@@ -84,9 +84,11 @@ p.span{
     opacity: 0.90;
 }
 
-.ptext .border .trans {
+.ptext .border.trans {
     background-color: transparent;
 }
+
+/* header video content styling */
 
 .v-header {
     height: 100vh;
@@ -139,7 +141,7 @@ p.span{
 }
 
 
-
+/* logo and name */
 
 .logo img{
     margin-top: 30px;
@@ -164,7 +166,7 @@ p.span{
     padding-bottom: 2rem;
 }
 
-
+/* about me button */
 
 .logo-name a{
     display: block;
@@ -180,6 +182,7 @@ p.span{
     left: 28px;
 }
 
+/* hover shaking effect */
 
 .btn:hover, .ptext .border img:hover{
     animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
@@ -206,7 +209,7 @@ p.span{
     }
 }
 
-
+/* rating styling */
 
 .checked {
     color: orange;
@@ -218,7 +221,7 @@ p.span{
 }
 
 
-
+/* skills */
 
 .skill-container {
     width: 100%;
@@ -266,6 +269,8 @@ p.span{
     width: 75%;
     background-color: #616161;
 }
+
+/* mobile friendly */
 
 @media(max-width: 960px)
 {
@@ -338,5 +343,15 @@ p.span{
         max-width: 500px;
     }
 
-    
+    .rating {
+        display: block;
+    }
+
+    .rating .skill {
+        display: block;
+    }
+
+    .parallax-img2 .petxt .border img {
+        max-width: 370px;
+    }
 }
